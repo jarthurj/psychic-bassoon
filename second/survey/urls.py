@@ -17,5 +17,6 @@ from django.urls import path, include
 from . import views
 urlpatterns = [
     path("", views.index),
+    path("process_results", views.process_results),
     path("results", views.results),
 ]

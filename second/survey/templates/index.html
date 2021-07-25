@@ -6,7 +6,7 @@
 </head>
 <body>
 	<div id="wrapper">
-		<form action="/results" method="POST">
+		<form action="/process_results" method="POST">
 			{% csrf_token %}
 			<p>Name<input name="name" type="text"></p>
 			<p>Email<input name="email" type="email"></p>

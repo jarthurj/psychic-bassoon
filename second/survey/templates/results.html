@@ -5,10 +5,10 @@
 	<title></title>
 </head>
 <body>
-			<p>Name{{name}}</p>
-			<p>Email{{email}}</p>
-			<p>Language{{language}}</p>
-			<p>Other Lanuage{{other_lanuage}}</p>
-			<p>Comment{{comment}}</p>
+		<p>Name{{request.session.name}}</p>
+		<p>Email{{request.session.email}}</p>
+		<p>Language{{request.session.language}}</p>
+		<p>Other Lanuage{{request.session.other_lanuage}}</p>
+		<p>Comment{{request.session.comment}}</p>
 </body>
 </html>

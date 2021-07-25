@@ -1,13 +1,17 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render, HttpResponse, redirect
 
 def index(request):
 	return render(request, "index.html")
+
+
+def process_results(request):
+	request.session["name"]=request.POST['name']
+	request.session["email"]=request.POST['email']
+	request.session["language"]=request.POST['langs']
+	request.session["other_lanuage"]=request.POST['langs2']
+	request.session["comment"]=request.POST['comment']
+	return redirect("/results")
 def results(request):
-	context = {
-		"name":request.POST['name'],
-		"email":request.POST['email'],
-		"language":request.POST['langs'],
-		"other_lanuage":request.POST['langs2'],
-		"comment":request.POST['comment'],
-	}
-	return render(request, "results.html", context)
+	return render(request, "results.html")
+
+
