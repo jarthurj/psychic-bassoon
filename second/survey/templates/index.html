@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<div id="wrapper">
+		<form action="/results" method="POST">
+			{% csrf_token %}
+			<p>Name<input name="name" type="text"></p>
+			<p>Email<input name="email" type="email"></p>
+			<p>Language<select id="langs" name="langs">
+				<option value="python">Python</option>
+				<option value="Javascript">Javascript</option>
+			</select></p>
+			<p>Other Lanuage
+			<input type="radio" id="cpp" name="langs2" value="cpp">
+			<label for="cpp">C++</label>
+			<input type="radio" id="java" name="langs2" value="java">
+			<label for="java">Java</label></p>
+			<p>Comment<textarea name="comment"></textarea></p>
+			<button type="submit">Submit</button>
+		</form>
+	</div>
+</body>
+</html>
