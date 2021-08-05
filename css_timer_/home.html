@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title></title>
+
+
+</head>
+<body>
+	<div id=wrapper>
+		<div id="center_bubble">
+			<div id="red_line"></div>
+			<div id="blue_line"></div>
+			<div id="green_line"></div>
+			<div id="red_line1"></div>
+			<div id="blue_line1"></div>
+			<div id="green_line1"></div>
+			<div id="red_line2"></div>
+			<div id="blue_line2"></div>
+			<div id="green_line2"></div>
+			<div id="red_line3"></div>
+			<div id="blue_line3"></div>
+			<div id="green_line3"></div>
+			<div id="red_line4"></div>
+			<div id="blue_line4"></div>
+			<div id="green_line4"></div>
+			<div id="red_line5"></div>
+			<div id="blue_line5"></div>
+			<div id="green_line5"></div>
+
+
+		</div>
+	</div>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var counter = 0
+			function angle_generator(num){
+				var angler = Math.floor((Math.random() *360));
+				return angler.toString()
+			}
+			function thing(num){
+				$('#red_line').css("transform","rotate("+((10*1)+num).toString()+"deg)");
+				$('#blue_line').css("transform","rotate("+((10*2)+num).toString()+"deg)");
+				$('#green_line').css("transform","rotate("+((10*3)+num).toString()+"deg)");
+				$('#red_line1').css("transform","rotate("+((10*4)+num).toString()+"deg)");
+				$('#blue_line1').css("transform","rotate("+((10*5)+num).toString()+"deg)");
+				$('#green_line1').css("transform","rotate("+((10+6)+num).toString()+"deg)");
+				$('#red_line2').css("transform","rotate("+((10*7)+num).toString()+"deg)");
+				$('#blue_line2').css("transform","rotate("+((10*8)+num).toString()+"deg)");
+				$('#green_line2').css("transform","rotate("+((10*9)+num).toString()+"deg)");
+				$('#red_line3').css("transform","rotate("+((10*10)+num).toString()+"deg)");
+				$('#blue_line3').css("transform","rotate("+((10*11)+num).toString()+"deg)");
+				$('#green_line3').css("transform","rotate("+((10*12)+num).toString()+"deg)");
+				$('#red_line4').css("transform","rotate("+((10*13)+num).toString()+"deg)");
+				$('#blue_line4').css("transform","rotate("+((10*14)+num).toString()+"deg)");
+				$('#green_line4').css("transform","rotate("+((10*15)+num).toString()+"deg)");
+				$('#red_line5').css("transform","rotate("+((10*16)+num).toString()+"deg)");
+				$('#blue_line5').css("transform","rotate("+((10*17)+num).toString()+"deg)");
+				$('#green_line5').css("transform","rotate("+((10*18)+num).toString()+"deg)");
+				$('#red_line6').css("transform","rotate("+((10*19)+num).toString()+"deg)");
+				$('#blue_line6').css("transform","rotate("+((10*20)+num).toString()+"deg)");
+				$('#green_line6').css("transform","rotate("+((10*21)+num).toString()+"deg)");
+
+				counter+=1
+			}
+			// setInterval(function(){alert("butt");},100);
+			setInterval(function(){thing(counter);}, 10);
+		});
+
+
+
+	</script>
+</body>
+</html>

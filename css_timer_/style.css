@@ -1,0 +1,47 @@
+#wrapper{
+	width: 95%;
+	height: 30em;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-color: black;
+	border-style: solid;
+	border-width: 2px;
+}
+
+
+#center_bubble{
+	width: 200px;
+	height: 200px;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-color: black black red red;
+}
+#red_line,#blue_line, #green_line,
+#red_line1,#blue_line1,#green_line1,
+#red_line2,#blue_line2,#green_line2,
+#red_line3,#blue_line3,#green_line3,
+#red_line4,#blue_line4,#green_line4,
+#red_line5,#blue_line5,#green_line5,
+#red_line6,#blue_line6,#green_line6{
+	height: 180px;
+	width: 0px;
+	border-style: solid;
+	border-width: 4px;
+	position: absolute;
+/*	transform: rotate(45deg);*/
+}
+#red_line,#red_line1,#red_line2,#red_line3,#red_line4,#red_line5,#red_line6{
+	border-color: red;
+}
+#blue_line,#blue_line1,#blue_line2,#blue_line3,#blue_line4,#blue_line5,#blue_line6{
+	border-color: blue;
+}
+#green_line,#green_line1,#green_line2,#green_line3,#green_line4,#green_line5,#green_line6{
+	border-color: green;
+}
