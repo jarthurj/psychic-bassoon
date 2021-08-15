@@ -17,5 +17,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path("survey/", include("survey.urls")),
-    path("random_app/", include("random_app.urls"))
+    path("random_app/", include("random_app.urls")),
+    path("ninja_gold/", include("ninja_gold.urls")),
 ]
