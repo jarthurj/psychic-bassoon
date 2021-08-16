@@ -13,22 +13,22 @@
 			<div id="farm">
 				<h1 class="location">Farm</h1>
 				<h2>(earns 10-20 golds)</h2>
-				<a href="process_gold/farm"><button type="submit">Find Gold!</a>
+				<a href="{% url 'get_gold' typer='farm' %}"><button type="submit">Find Gold!</a>
 			</div>
 			<div id="cave">
 				<h1 class="location">Cave</h1>
 				<h2>(earns 5-10 golds)</h2>
-				<a href="process_gold/cave"><button type="submit">Find Gold!</a>
+				<a href="{% url 'get_gold' typer='cave' %}"><button type="submit">Find Gold!</a>
 			</div>
 			<div id="house">
 				<h1 class="location">House</h1>
 				<h2>(earns 2-5 golds)</h2>
-				<a href="process_gold/house"><button type="submit">Find Gold!</a>
+				<a href="{% url 'get_gold' typer='house' %}"><button type="submit">Find Gold!</a>
 			</div>
 			<div id="casino">
 				<h1 class="location">Casino</h1>
 				<h2>(earns/takes 0-25 golds)</h2>
-				<a href="process_gold/casino"><button type="submit">Find Gold!</a>
+				<a href="{% url 'get_gold' typer='casino' %}"><button type="submit">Find Gold!</a>
 			</div>
 		</div>
 		<div id="activities">

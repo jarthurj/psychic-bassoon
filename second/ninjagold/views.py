@@ -24,4 +24,4 @@ def process_gold(request, typer):
 			request.session['current_gold'] -= random.randint(*ranges[typer])
 	else:
 		request.session['current_gold'] += random.randint(*ranges[typer])
-	return redirect('/ninja_gold')
+	return redirect('home_gold')
