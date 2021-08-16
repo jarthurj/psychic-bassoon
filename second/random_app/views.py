@@ -9,7 +9,7 @@ def index(request):
 		'counter':request.session['counter'],
 		'random': get_random_string(length=14)
 	}
-	return render(request, "index.html", context)
+	return render(request, "random_app_index.html", context)
 def reset(request):
 	request.session.flush()
 	return redirect('/random_app')
